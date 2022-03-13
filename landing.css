@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Poppins:wght@200;400&display=swap");
+
+:root {
+  --color-darkblue: #00778b;
+  --color-lightblue: #54b5af;
+  --color-red: #e3001b;
+  --color-white: #ffffff;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  background: var(--color-darkblue);
+}
+.page-wrapper {
+  background: var(--color-darkblue);
+  color: var(--color-white);
+}
+.head {
+  background: var(--color-white);
+}
+header{
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#header-img {
+  width: 60vw;
+}
+nav {
+  font-weight: 400;
+}
+.list-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+#nav-bar {
+  background: var(--color-white);
+  height: 3rem;
+  padding: 0 0.3rem 1rem 0.3rem;
+  border-top: 0.3rem solid var(--color-darkblue);
+  justify-content: center;
+}
+@media (max-width: 650px) {
+  #nav-bar {
+    width: 100%;
+    flex-direction: column;
+    align-itmes: center; 
+    text-align: cneter;
+  }
+  .list-links {
+    flex-direction: column;
+  }
+}
+
+.nav-link {
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-red);
+  height: 2rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.nav-link:hover {
+  background-color: var(--color-lightblue);
+  border-width: 4px;
+}
+
+#video {
+  display: block;
+  margin: 25rem auto 0 auto;
+  width: 50%;
+  height: 15rem;
+}
+
+.section-header{
+  font-size: 3rem;
+}
+
+.product-img {
+  display: flex; 
+  margin: 0 auto 0 auto;
+  width: 33%; 
+}
+.product-one {
+  background: var(--color-white);
+  padding: 1rem 0;
+  margin: 0 15rem;
+}
+.product-desc {
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+}
+
+
+.amazon-logo{
+  background: var(--color-white);
+  border: 5px solid var(--color-white);
+  
+  width: 20%;
+}
+.amazon-logo:hover{
+  border: 5px solid var(--color-lightblue)
+}
+.contact-section{
+  justify-content: center; 
+  align-items: center;
+}
+.input-form {
+  margin: 0.5rem 0 0.5rem 3rem;
+  font-family: inherit;
+  font-size: inherit; 
+  width: 50%;
+  height: 1.5rem;
+}
+#submit {
+  height: 2rem;
+}
+label {
+  display: flex;
+  margin: 0.5rem 0 0.5rem 3rem;
+  font-size: 1.5rem;
+}
